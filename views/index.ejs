@@ -14,5 +14,22 @@
             <button type="submit">Search!</button>
         </form>
     </body> 
+
+<% if (drink) { %>
+    <div>
+        <h2>
+            <%= drink.strDrink %>
+        </h2>
+        <img src="<%= drink.strDrinkThumb %>/medium" alt="
+        <%= drink.strDrink %> ">
+        <p>
+            <%= drink.strInstructions %>
+        </p>
+    </div>
+<%  } %>
+
+// Pulls the drink name, photo and makes it a defined px, and then also pulls instructions. 
+
+
 </html>
 
